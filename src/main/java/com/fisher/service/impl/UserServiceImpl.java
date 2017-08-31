@@ -3,12 +3,14 @@ package com.fisher.service.impl;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.fisher.domain.User;
 import com.fisher.mapper.UserMapper;
 import com.fisher.service.UserService;
 
+@Service
 @Transactional(rollbackFor = Exception.class)
 public class UserServiceImpl implements UserService {
     

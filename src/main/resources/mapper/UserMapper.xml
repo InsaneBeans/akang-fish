@@ -5,18 +5,15 @@
 <mapper namespace="com.fisher.mapper.UserMapper">
     <!--通过username获取user对象-->
     <select id="getUser" parameterType="String" resultType="user">
-        SELECT * from user where name = #{name}
+        SELECT id, name, mark from user where name = #{name}
     </select>
 
     <select id="getAllUsers" resultType="user">
-        select * from user;
+        select id, name, mark from user;
     </select>
 
     <select id="getUserMark" resultType="java.lang.String">
         select mark from user where name = #{name}
     </select>
     
-    <update id="getAllUsersCount" resultType="int">
-        select (id) from user where 1 = 1;
-    </update>
 </mapper>
