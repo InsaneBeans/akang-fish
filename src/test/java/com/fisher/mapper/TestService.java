@@ -8,12 +8,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import com.fisher.Application;
+import com.fisher.HuApplication;
 import com.fisher.domain.User;
 import com.fisher.service.UserService;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringBootTest(classes = Application.class)
+@SpringBootTest(classes = HuApplication.class)
 public class TestService {
     
     @Autowired

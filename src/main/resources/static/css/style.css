@@ -362,6 +362,11 @@ code {
 #main-nav {
   float: left;
 }
+
+#customer {
+  float: right;
+}
+
 #sub-nav,
 #search-form-wrap {
   float: right;
